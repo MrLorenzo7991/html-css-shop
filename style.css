@@ -7,36 +7,18 @@ main{
 
 /*Prima riga*/
     #prima-riga{
-    height: 100%;
-    width: 100%;
     margin-bottom: 50px;
+    text-align: center;
+   }
+    .inline{
+    display: inline-block;
     position: relative;
-    top: 0;
-    left: 0;
-}
-    #ipad1{
-        width: 33%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    } 
-    #iphone1{
-        width: 33%;
-        position: absolute;
-        top: 0;
-        left: 33.5%;
-    }
-    #cuffie1{
-        width: 33%;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 /*Sconto*/
     .sconto{
         position: absolute;
-        top:0%;
-        right: 0%;
+        top:0;
+        right: 0;
     }
     .rosso{
         background-color: red;
@@ -44,29 +26,23 @@ main{
     .verde{
         background-color: green;
     }
-/*Seconda riga*/                           /*FIXME: aggiustare posizioni*/
+/*Seconda riga*/                        
     #seconda-riga{
-        height: 100%;
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
+        text-align: center;
     }
-    #ipad2{
-        width: 32%;
+/*cuore*/
+    .cuore{
+        visibility: hidden;
+        color: red;
+        font-size: x-large;
         position: absolute;
-        bottom: 0;
-        left: 0;
-       } 
-    #iphone2{
-        width: 32%;
-        position: absolute;
-        bottom: 0;
-        left: 34%;
-    }
-    #cuffie2{
-        width: 32%;
-        position: absolute;
-        bottom: 0;
         right: 0;
+        left: 0;
+        bottom: 15;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    
+    .inline:hover .cuore{
+        visibility: visible;
     }
