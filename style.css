@@ -1,43 +1,72 @@
 *{
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0%;
+    box-sizing: border-box;    
 }
 main{
     margin: 30px;
 }
-#prima-riga{
-    height: auto;
+
+/*Prima riga*/
+    #prima-riga{
+    height: 100%;
     width: 100%;
     margin-bottom: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
     #ipad1{
-        width: 32%;
-        position: relative;
+        width: 33%;
+        position: absolute;
         top: 0;
         left: 0;
     } 
     #iphone1{
-        width: 32%;
-        position: relative;
+        width: 33%;
+        position: absolute;
         top: 0;
-        left: middle;
-        margin-right: auto;
+        left: 33.5%;
     }
     #cuffie1{
-        width: 32%;
-        position: relative;
+        width: 33%;
+        position: absolute;
         top: 0;
         right: 0;
     }
-.sconto{
-    position: absolute;
-    top:0%;
-    right: 0%;
-}
-.rosso{
-    background-color: red;
-}
-.verde{
-    background-color: green;
-}
+/*Sconto*/
+    .sconto{
+        position: absolute;
+        top:0%;
+        right: 0%;
+    }
+    .rosso{
+        background-color: red;
+    }
+    .verde{
+        background-color: green;
+    }
+/*Seconda riga*/                           /*FIXME: aggiustare posizioni*/
+    #seconda-riga{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #ipad2{
+        width: 32%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+       } 
+    #iphone2{
+        width: 32%;
+        position: absolute;
+        bottom: 0;
+        left: 34%;
+    }
+    #cuffie2{
+        width: 32%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
