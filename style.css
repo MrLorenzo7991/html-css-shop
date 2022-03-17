@@ -13,6 +13,8 @@ main{
     .inline{
     display: inline-block;
     position: relative;
+    top: 0;
+    left: 0;
     }
 /*Sconto*/
     .sconto{
@@ -38,9 +40,9 @@ main{
         position: absolute;
         right: 0;
         left: 0;
-        bottom: 15;
+        bottom: 15px;
         margin-left: auto;
-        margin-right: auto;    
+        margin-right: auto;  
     }
     
     .inline:hover .cuore{
